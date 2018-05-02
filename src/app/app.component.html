@@ -1,112 +1,125 @@
-   <div class="container">
-     <div style="text-align:center">
+<!-- Start your project here-->
+<div style="height: 20vh">
 
-         <!-- La parte de la barra de búsqueda
-         <form class="navbar-form navbar-left" role="search">
-           <div class="form-group">
-             <input type="text" class="form-control" placeholder="Search">
-           </div>
-           <button type="submit" class="btn btn-default">Submit</button>
-       </form>
-       -->
+  <div class="container">
+  <div style="text-align:center">
 
-       <!--Navbar-->
-       <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark purple">
+      <!-- La parte de la barra de búsqueda
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    -->
 
-           <!-- Navbar brand -->
-           <a class="navbar-brand" href="#">Navbar</a>
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark scrolling-navbar mdb-color lighten-3">
 
-           <!-- Collapsible content -->
-           <links>
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
 
-               <!-- Links -->
-               <ul class="navbar-nav mr-auto">
-                   <li class="nav-item active">
-                       <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link waves-light" mdbWavesEffect>Features</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
-                   </li>
+        <!-- Collapsible content -->
+        <links>
 
-                   <!-- Dropdown -->
-                   <li class="nav-item dropdown" dropdown>
-                       <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                       Basic dropdown<span class="caret"></span></a>
-                       <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-                           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-                           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-                           <div class="divider dropdown-divider"></div>
-                           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-                       </div>
-                   </li>
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link waves-light" mdbWavesEffect>Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>Ubicaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>Contacto</a>
+                </li>
 
-               </ul>
-               <!-- Links -->
+                <!-- Dropdown -->
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Otros servicios<span class="caret"></span></a>
+                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Desde blablabla</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Bla bla</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                        <div class="divider dropdown-divider"></div>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                    </div>
+                </li>
 
-       <!-- Search form -->
-               <form class="form-inline waves-light" mdbWavesEffect>
-                   <div class="md-form mt-0">
-                       <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                   </div>
-               </form>
-           </links>
-           <!-- Collapsible content -->
+            </ul>
+            <!-- Links -->
 
-       </mdb-navbar>
-       <!--/.Navbar-->
+    <!-- Search form -->
+            <form class="form-inline waves-light" mdbWavesEffect>
+                <div class="md-form mt-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                </div>
+            </form>
+        </links>
+        <!-- Collapsible content -->
+
+    </mdb-navbar>
+    <!--/.Navbar-->
 
 <!-- termina -->
 
-     <div class="row">
+  <div class="row">
 
-       <div class="col-md-8">
-         <h1>
-           Bienvenido a {{ title }}!
-         </h1>
-         <img width="100" alt="AngularLogo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    <div class="col-md-8">
+      <h1>
+        Bienvenido a {{ title }}!
+      </h1>
+      <img width="100" alt="AngularLogo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 
-         <button [disabled]="!listo" (click)="hacerAlgo()" >Haz click!</button>
-         <!--<button [disabled]="!listo" (onclick="hacerAlgo()")>Click me!</button>
-          -->
-          <hr>
-          <input type="text" placeholder="Tu nombre" [(ngModel)]="nombre">
-          <input type="text" placeholder="Ingresa tu apellido" [(ngModel)]="apellidos">
-          <br>
-          Hola {{nombre}}{{' '}}{{apellido}}
-         <ul class="list-group">
-           <ng-container *ngFor="let lugar of lugares">
-             <li *ngIf="lugar.active" class="list-group-item">{{lugar.nombre}}</li>
-           </ng-container>
-         </ul>
-         <ul>
-           <ng-container *ngFor="let lugar of lugares; let i = index" [ngSwitch]="lugar.cercania">
-             <a>
-               <li contar-clicks [ngStyle]="{color: (lugar.active) ? 'black' : 'gray'}"
-                [ngClass]="{numero_par: (i+1) %2 !== 0}"  [resaltar]="lugar.plan">
-                {{lugar.nombre}} -
-                <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
-                <span *ngSwitchCase="2" [ngStyle]="{color: 'orange'}">Cercano</span>
-                <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
-              </li></a>
-            </ng-container>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h2>Destacados</h2>
-        </div>
-      </div>
-    </div>
+      <button [disabled]="!listo" (click)="hacerAlgo()" >Haz click!</button>
+      <!--<button [disabled]="!listo" (onclick="hacerAlgo()")>Click me!</button>
+       -->
 
-
-   <!-- this creates a google map on the page with the given lat/lng from -->
-   <!-- the component as the initial center of the map: -->
-   <agm-map [latitude]="lat" [longitude]="lng">
-     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-   </agm-map>
-
+       <!-- this creates a google map on the page with the given lat/lng from -->
+       <!-- the component as the initial center of the map: -->
+       <agm-map [latitude]="lat" [longitude]="lng">
+         <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+       </agm-map>
+       <hr>
+       <input type="text" placeholder="Tu nombre" [(ngModel)]="nombre">
+       <input type="text" placeholder="Ingresa tu apellido" [(ngModel)]="apellidos">
+       <br>
+       Hola {{nombre}}{{' '}}{{apellido}}
+      <ul class="list-group">
+        <ng-container *ngFor="let lugar of lugares">
+          <li *ngIf="lugar.active" class="list-group-item">{{lugar.nombre}}</li>
+        </ng-container>
+      </ul>
+      <ul>
+        <ng-container *ngFor="let lugar of lugares; let i = index" [ngSwitch]="lugar.cercania">
+          <a>
+            <li contar-clicks [ngStyle]="{color: (lugar.active) ? 'black' : 'gray'}"
+             [ngClass]="{numero_par: (i+1) %2 !== 0}"  [resaltar]="lugar.plan">
+             {{lugar.nombre}} -
+             <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
+             <span *ngSwitchCase="2" [ngStyle]="{color: 'orange'}">Cercano</span>
+             <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
+           </li></a>
+         </ng-container>
+       </ul>
+     </div>
+     <div class="col-md-4">
+       <h2>Destacados</h2>
+     </div>
+   </div>
+ </div>
 
 </div>
+
+<footer>
+  <div class="flex-center flex-column">
+      <h1 class="animated fadeIn mb-4">Proyecto calcula tu distancia </h1>
+
+      <h5 class="animated fadeIn mb-3">Gracias por compartirnos tu ubicación.</h5>
+      <p class="animated fadeIn text-muted">Melisa Pérez 2018</p>
+    </div>
+</footer>
+
+</div>
+<!-- /Start your project here-->

@@ -1,16 +1,17 @@
+//import { NavbarComponent } from './../../../src/navbars/navbar.component';
+//import { NavbarService } from './../../../src/navbars/navbar.service';
+//import { LogoComponent } from './../../../src/navbars/logo.component';
+//import { LinksComponent } from './../../../src/navbars/links.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+//import { MDBBootstrapModule } from '../../../src';
+
 import { FormsModule } from "@angular/forms";
 import { AgmCoreModule } from '@agm/core';
 import { ResaltarDirective } from "./directives/resaltar.directive";
 import { ContarClicksDirective } from "./directives/contar-clicks.directive";
-
-import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
 
 @NgModule({
   declarations: [
@@ -25,10 +26,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
       apiKey: 'AIzaSyBBKujuwqVevE9DUO6OhofIzrWInJq6NxY'
 //      apiKey: 'AIzaSyBAMtnq2WPv7PYc00YZHHiruBs7l-Xd0xM'
     }),
-    MDBBootstrapModule.forRoot()
+    RouterModule.forRoot([])
+//    ,MDBBootstrapModule.forRoot()
   ],
-  providers: [],
+  schemas: [ NO_ERRORS_SCHEMA ],
+//  ,providers: [NavbarService],
   bootstrap: [AppComponent]
-  ,schemas: [ NO_ERRORS_SCHEMA ]
+//  ,exports: [ NavbarComponent, LinksComponent, LogoComponent],
 })
-export class AppModule { }
+export class AppModule {
+}
